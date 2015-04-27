@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicDiary", "Electron
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{DF329F78-C824-47BC-9C5C-E4904878E39D}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ElectronicDiaryDB", "ElectronicDiaryDB\ElectronicDiaryDB\ElectronicDiaryDB.sqlproj", "{1E06D48B-4764-45DE-A962-2D6DB1DCEFDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,12 @@ Global
 		{DF329F78-C824-47BC-9C5C-E4904878E39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF329F78-C824-47BC-9C5C-E4904878E39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF329F78-C824-47BC-9C5C-E4904878E39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E06D48B-4764-45DE-A962-2D6DB1DCEFDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E06D48B-4764-45DE-A962-2D6DB1DCEFDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E06D48B-4764-45DE-A962-2D6DB1DCEFDF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1E06D48B-4764-45DE-A962-2D6DB1DCEFDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E06D48B-4764-45DE-A962-2D6DB1DCEFDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E06D48B-4764-45DE-A962-2D6DB1DCEFDF}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
