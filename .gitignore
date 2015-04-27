@@ -1,0 +1,8 @@
+*.suo
+*.user
+*.DotSettings
+bin/
+debug/
+release/
+Logs/
+App_Data/
