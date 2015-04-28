@@ -48,6 +48,8 @@
     <Compile Include="Models\NoteModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ConsumerRepository.cs" />
+    <Compile Include="Repositories\Fake\BaseFakeRepository.cs" />
+    <Compile Include="Repositories\Fake\FakeConsumerRepository.cs" />
     <Compile Include="Repositories\Interfaces\IRepository.cs" />
     <Compile Include="Repositories\Interfaces\IRepositoryLocator.cs" />
     <Compile Include="Repositories\LessonRepository.cs" />

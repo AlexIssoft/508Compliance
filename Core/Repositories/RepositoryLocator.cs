@@ -18,7 +18,7 @@ namespace Core.Repositories
             DefaultRepositories = new Dictionary<string, string>
 		    {
 		        {
-		            "Core.Interfaces.IConsumerRepository", "Core.Repositories.ConsumerRepository"
+		            "Core.Interfaces.IConsumerRepository", "Core.Repositories.Fake.FakeConsumerRepository"
 		        },
 		        {
 		            "Core.Interfaces.ILessonRepository", "Core.Repositories.LessonRepository"
