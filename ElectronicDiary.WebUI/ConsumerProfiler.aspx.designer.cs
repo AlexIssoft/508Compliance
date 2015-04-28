@@ -10,6 +10,6 @@
 namespace ElectronicDiary.WebUI {
     
     
-    public partial class HomePage {
+    public partial class ConsumerProfiler {
     }
 }

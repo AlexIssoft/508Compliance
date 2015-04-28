@@ -19,7 +19,7 @@ namespace ElectronicDiary.WebUI
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             var presenter = new HomePresenter(this);
-            presenter.CheckUser(lblFile.Text);
+            
             Response.Redirect(FileName);
         }
     }
