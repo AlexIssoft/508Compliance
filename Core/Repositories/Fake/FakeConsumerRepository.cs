@@ -19,7 +19,15 @@ namespace Core.Repositories.Fake
                         Email = "fdsfsdf@tt.by",
                         FirstName = "Name",
                         LastName = "Last",
-                        University = "BSUIR"
+                        University = "BSUIR",
+                        Lessons = new List<LessonModel>
+                        {
+                           new LessonModel
+                                {
+                                    LessonId = 1,
+                                    Name = "History"
+                                }
+                        }
                     }
                 },
 
@@ -30,7 +38,15 @@ namespace Core.Repositories.Fake
                         ConsumerId = 2,
                         FirstName = "Ivan",
                         LastName = "Tor",
-                        University = "BNTU"
+                        University = "BNTU",
+                         Lessons = new List<LessonModel>
+                        {
+                           new LessonModel
+                                {
+                                    LessonId = 3,
+                                    Name = "Mathematics"
+                                }
+                        }
                     }
                 },
                 {
@@ -40,7 +56,16 @@ namespace Core.Repositories.Fake
                         ConsumerId = 3,
                         FirstName = "Michael",
                         LastName = "Tut",
-                        University = "BSU"
+                        University = "BSU",
+                       Lessons = new List<LessonModel>
+                        {
+                           new LessonModel
+                                {
+                                    LessonId = 2,
+                                    Name = "Biology"
+                                }
+                        }
+                       
                     }
                 }
             };

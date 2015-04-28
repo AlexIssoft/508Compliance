@@ -15,8 +15,6 @@ namespace Core.Repositories.Fake
                     1, new NoteModel
                     {
                         NoteId = 1,
-                        ConsumerId = 1,
-                        LessonId = 1,
                         CreationDate = DateTime.Today,
                         Grade = 1
                     }
@@ -25,8 +23,6 @@ namespace Core.Repositories.Fake
                     2, new NoteModel
                     {
                         NoteId = 2,
-                        ConsumerId = 2,
-                        LessonId = 2,
                         CreationDate = DateTime.Today,
                         Grade = 2
                     }
@@ -35,8 +31,6 @@ namespace Core.Repositories.Fake
                     3, new NoteModel
                     {
                         NoteId = 3,
-                        ConsumerId = 3,
-                        LessonId = 3,
                         CreationDate = DateTime.Today,
                         Grade = 3
                     }

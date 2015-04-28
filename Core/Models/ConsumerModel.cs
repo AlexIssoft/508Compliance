@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Core.Models
 {
@@ -10,5 +11,6 @@ namespace Core.Models
         public string Email { get; set; }
         public DateTime BirthDate { get; set; }
         public string University { get; set; }
+        public List<LessonModel> Lessons { get; set; } 
     }
 }
