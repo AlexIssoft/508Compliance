@@ -60,7 +60,9 @@
     <Content Include="AddLesson.aspx" />
     <Content Include="App_Themes\ThemeDiary\theme.css" />
     <Content Include="ConsumerProfiler.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Master.Master" />
+    <Content Include="Masters\Authorization.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -72,7 +74,9 @@
     <Content Include="Global.asax" />
     <Content Include="HomePage.aspx" />
     <Content Include="Reports.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddLesson.aspx.cs">
@@ -99,6 +103,13 @@
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -106,8 +117,18 @@
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Presenters\AddLessonPresenter.cs" />
     <Compile Include="Presenters\IBasePresenter.cs" />
+=======
+    <Compile Include="Masters\Authorization.Master.cs">
+      <DependentUpon>Authorization.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Authorization.Master.designer.cs">
+      <DependentUpon>Authorization.Master</DependentUpon>
+    </Compile>
+>>>>>>> c5408ffbe16ee47f13cd3eb5778fc8f4d79ca453
     <Compile Include="Presenters\HomePresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reports.aspx.cs">
