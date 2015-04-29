@@ -5,11 +5,11 @@ namespace Core.Repositories.Fake
 {
     public class BaseFakeRepository<T> where T : class
     {
-        protected Dictionary<int, T> FakeData;
+        protected Dictionary<long, T> FakeData;
 
         protected BaseFakeRepository()
         {
-            FakeData = new Dictionary<int, T>();
+            FakeData = new Dictionary<long, T>();
         }
 
         public T Get(int id)

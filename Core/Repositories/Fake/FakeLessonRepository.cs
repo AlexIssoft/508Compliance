@@ -8,7 +8,7 @@ namespace Core.Repositories.Fake
     {
         public FakeLessonRepository()
         {
-            FakeData = new Dictionary<int, LessonModel>
+            FakeData = new Dictionary<long, LessonModel>
             {
                 {
                     1, new LessonModel
@@ -42,6 +42,11 @@ namespace Core.Repositories.Fake
         public List<LessonModel> GetAllLessons()
         {
             return GetAll();
+        }
+
+        public List<LessonModel> GetLessonsByConsumerId(long consumerId)
+        {
+            throw new System.NotImplementedException();
         }
 
         public void AddLesson(LessonModel lesson)

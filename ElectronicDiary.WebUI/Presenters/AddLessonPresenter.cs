@@ -22,10 +22,9 @@ namespace ElectronicDiary.WebUI.Presenters
         {
             var repositoryLocator = new RepositoryLocator();
             var lessonRepository = repositoryLocator.GetRepository<ILessonRepository>();
-            var consumerRepository = repositoryLocator.GetRepository<IConsumerRepository>();
 
             _view.Lessons = lessonRepository.GetAllLessons();
-            _view.ConsumerLessons = consumerRepository.GetConsumer(1).Lessons;
+            _view.ConsumerLessons = lessonRepository.GetLessonsByConsumerId(1);
         }
     }
 }
