@@ -4,7 +4,7 @@ using Core.Models;
 
 namespace Core.Repositories
 {
-    public class NoteRepository: INoteRepository
+    public class NoteRepository : INoteRepository
     {
         public NoteModel GetNote(int noteId)
         {
@@ -18,7 +18,7 @@ namespace Core.Repositories
 
         public void AddNote(NoteModel note)
         {
-   
+
         }
 
         public void UpdateNote(NoteModel note)
@@ -28,7 +28,7 @@ namespace Core.Repositories
 
         public void RemoveNote(int noteId)
         {
-            
+
         }
     }
 }

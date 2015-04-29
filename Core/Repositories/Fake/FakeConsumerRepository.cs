@@ -9,7 +9,7 @@ namespace Core.Repositories.Fake
     {
         public FakeConsumerRepository()
         {
-            FakeData = new Dictionary<int, ConsumerModel>
+            FakeData = new Dictionary<long, ConsumerModel>
             {
                 {
                     1, new ConsumerModel

@@ -21,35 +21,43 @@ namespace ElectronicDiary.WebUI
             {
                 foreach (var lesson in Lessons)
                 {
-                    CheckBoxListLessons.Items.Add(new ListItem
-                     {
-                         Value = lesson.LessonId.ToString(),
-                         Text = lesson.Name,
-                         Selected = ConsumerLessons.FirstOrDefault(x => x.LessonId == lesson.LessonId) != null
-                     });
+                    if (ConsumerLessons.FirstOrDefault(x => x.LessonId == lesson.LessonId) != null)
+                    {
+                        CheckBoxListConsumerLessons.Items.Add(new ListItem
+                        {
+                            Value = lesson.LessonId.ToString(),
+                            Text = lesson.Name,
+                            Selected = true
+                        });
+                    }
+                    else
+                    {
+                        CheckBoxListUnselectedLessons.Items.Add(new ListItem
+                        {
+                            Value = lesson.LessonId.ToString(),
+                            Text = lesson.Name,
+                            Selected = false
+                        });
+                    }
                 }
             }
         }
 
         protected void ChangeListLessonsBtn_Click(object sender, EventArgs e)
         {
-            foreach (ListItem item in CheckBoxListLessons.Items)
+            foreach (ListItem listItem in CheckBoxListConsumerLessons.Items)
             {
-                var exist = ConsumerLessons.Any(x => x.LessonId == Convert.ToInt32(item.Value));
-
-                if (item.Selected)
+                if (!listItem.Selected)
                 {
-                    if (!exist)
-                    {
-
-                    }
+                    
                 }
-                else
-                {
-                    if (exist)
-                    {
+            }
 
-                    }
+            foreach (ListItem listItem in CheckBoxListUnselectedLessons.Items)
+            {
+                if (listItem.Selected)
+                {
+
                 }
             }
         }
