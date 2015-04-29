@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\ClassFactory.cs" />
+    <Compile Include="Helpers\EmailHelper.cs" />
     <Compile Include="Interfaces\IConsumerRepository.cs" />
     <Compile Include="Interfaces\ILessonRepository.cs" />
     <Compile Include="Interfaces\INoteRepository.cs" />

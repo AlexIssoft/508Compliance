@@ -303,4 +303,7 @@
     <None Include="SchemaCompare.scmp" />
     <None Include="ElectronicDiaryDB.publish.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="PostDeploymentScript.sql" />
+  </ItemGroup>
 </Project>
