@@ -9,7 +9,7 @@ namespace Core.Repositories.Fake
     {
         public FakeNoteRepository()
         {
-            FakeData = new Dictionary<int, NoteModel>
+            FakeData = new Dictionary<long, NoteModel>
             {
                 {
                     1, new NoteModel

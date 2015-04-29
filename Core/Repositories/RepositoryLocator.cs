@@ -21,7 +21,7 @@ namespace Core.Repositories
                     "Core.Interfaces.IConsumerRepository", "Core.Repositories.Fake.FakeConsumerRepository"
                 },
                 {
-                    "Core.Interfaces.ILessonRepository", "Core.Repositories.Fake.FakeLessonRepository"
+                    "Core.Interfaces.ILessonRepository", "Core.Repositories.LessonRepository"
                 },
                 {
                     "Core.Interfaces.INoteRepository", "Core.Repositories.Fake.FakeNoteRepository"

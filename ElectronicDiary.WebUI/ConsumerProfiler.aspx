@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeFile="ConsumerProfiler.aspx.cs" Inherits="ElectronicDiary.WebUI.ConsumerProfiler" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="ConsumerProfiler.aspx.cs" Inherits="ElectronicDiary.WebUI.ConsumerProfiler" %>
 
 
 
@@ -17,70 +17,47 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="well bs-component">
-              <form class="form-horizontal">
+              <form class="form-horizontal" runat="server">
                 <fieldset>
-                  <legend>Legend</legend>
+                  <legend>Profile</legend>
                   <div class="form-group">
-                    <label class="col-lg-2 control-label" for="inputEmail">Email</label>
-                    <div class="col-lg-10">
-                      <input type="text" placeholder="Email" id="inputEmail" class="form-control">
+                    <label class="col-lg-2 control-label" for="FirstName">First Name</label>
+                    <div class="col-lg-10 has-error">
+                            <asp:TextBox ID="FirstName" ClientIDMode="Static" runat="server" placeholder="First Name"  CssClass="form-control"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFirstNameValidator" CssClass="control-label" runat="server" ErrorMessage="First Name is required." ControlToValidate="FirstName" Display="Dynamic">
+                        </asp:RequiredFieldValidator>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-2 control-label" for="inputPassword">Password</label>
-                    <div class="col-lg-10">
-                      <input type="password" placeholder="Password" id="inputPassword" class="form-control">
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Checkbox
-                        </label>
-                      </div>
+                    <label class="col-lg-2 control-label" for="LastName">Last Name</label>
+                    <div class="col-lg-10  has-error">
+                        <asp:TextBox ID="LastName" ClientIDMode="Static" runat="server" placeholder="Last Name"  CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredLastNameValidator" CssClass="control-label" runat="server" ErrorMessage="Last Name is required." ControlToValidate="LastName" Display="Dynamic">
+                        </asp:RequiredFieldValidator>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-2 control-label" for="textArea">Textarea</label>
-                    <div class="col-lg-10">
-                      <textarea id="textArea" rows="3" class="form-control"></textarea>
-                      <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    <label class="col-lg-2 control-label" for="Email">Email</label>
+                    <div class="col-lg-10  has-error">
+                         <asp:TextBox ID="Email" ClientIDMode="Static" runat="server" placeholder="Email"  CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredEmailValidator" CssClass="control-label" runat="server" ErrorMessage="Email is required." ControlToValidate="Email" Display="Dynamic">
+                        </asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionEmailValidator" runat="server" ErrorMessage="Email is wrong" ControlToValidate="Email" CssClass="control-label" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-2 control-label">Radios</label>
+                    <label class="col-lg-2 control-label" for="BirthDate">Birth Date</label>
                     <div class="col-lg-10">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">
-                          Option one is this
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">
-                          Option two can be something else
-                        </label>
-                      </div>
+                        <asp:TextBox ID="BirthDate" ClientIDMode="Static" runat="server" placeholder="BirthDate"  CssClass="form-control"></asp:TextBox>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-2 control-label" for="select">Selects</label>
+                    <label class="col-lg-2 control-label" for="University">University</label>
                     <div class="col-lg-10">
-                      <select id="select" class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                      <br>
-                      <select class="form-control" multiple="">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
+                        <asp:TextBox ID="University" ClientIDMode="Static" runat="server" placeholder="University"  CssClass="form-control"></asp:TextBox>
                     </div>
                   </div>
+
                   <div class="form-group">
                     <div class="col-lg-10 col-lg-offset-2">
                       <button class="btn btn-default" type="reset">Cancel</button>

@@ -8,6 +8,7 @@ namespace Core.Interfaces
     {
         LessonModel GetLesson(int lessonId);
         List<LessonModel> GetAllLessons();
+        List<LessonModel> GetLessonsByConsumerId(long consumerId);
         void AddLesson(LessonModel lesson);
         void UpdateLesson(LessonModel lesson);
         void RemoveLesson(int lessonId);

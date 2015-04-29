@@ -10,24 +10,24 @@
 namespace ElectronicDiary.WebUI {
     
     
-    public partial class Master {
+    public partial class Lessons {
         
         /// <summary>
-        /// head control.
+        /// CheckBoxListLessons control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxListLessons;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// ChangeListLessonsBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button ChangeListLessonsBtn;
     }
 }

@@ -121,6 +121,9 @@
     <Compile Include="Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
+    <Compile Include="Presenters\ConsumerPresenter.cs" />
+    <Compile Include="Presenters\AddLessonPresenter.cs" />
+    <Compile Include="Presenters\IBasePresenter.cs" />
     <Compile Include="Masters\Authorization.Master.cs">
       <DependentUpon>Authorization.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -145,6 +148,8 @@
     <Compile Include="Reports.aspx.designer.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ViewInterfaces\IConsumerView.cs" />
+    <Compile Include="ViewInterfaces\IAddLesson.cs" />
     <Compile Include="ViewInterfaces\IHomeView.cs" />
     <Compile Include="ViewInterfaces\IRegistrationView.cs" />
   </ItemGroup>
@@ -154,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{DF329F78-C824-47BC-9C5C-E4904878E39D}</Project>
       <Project>{df329f78-c824-47bc-9c5c-e4904878e39d}</Project>
       <Name>Core</Name>
     </ProjectReference>
