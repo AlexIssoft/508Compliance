@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeFile="ConsumerProfiler.aspx.cs" Inherits="ElectronicDiary.WebUI.ConsumerProfiler" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="ConsumerProfiler.aspx.cs" Inherits="ElectronicDiary.WebUI.ConsumerProfiler" %>
 
 
 
@@ -17,37 +17,44 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="well bs-component">
-              <form class="form-horizontal">
+              <form class="form-horizontal" runat="server">
                 <fieldset>
                   <legend>Profile</legend>
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="FirstName">First Name</label>
-                    <div class="col-lg-10">
-                        <input type="text" placeholder="First Name" id="FirstName" runat="server" class="form-control"/>
+                    <div class="col-lg-10 has-error">
+                            <asp:TextBox ID="FirstName" ClientIDMode="Static" runat="server" placeholder="First Name"  CssClass="form-control"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFirstNameValidator" CssClass="control-label" runat="server" ErrorMessage="First Name is required." ControlToValidate="FirstName" Display="Dynamic">
+                        </asp:RequiredFieldValidator>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="LastName">Last Name</label>
-                    <div class="col-lg-10">
-                        <input type="text" placeholder="Last Name" id="LastName" runat="server" class="form-control"/>
+                    <div class="col-lg-10  has-error">
+                        <asp:TextBox ID="LastName" ClientIDMode="Static" runat="server" placeholder="Last Name"  CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredLastNameValidator" CssClass="control-label" runat="server" ErrorMessage="Last Name is required." ControlToValidate="LastName" Display="Dynamic">
+                        </asp:RequiredFieldValidator>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-2 control-label" for="inputEmail">Email</label>
-                    <div class="col-lg-10">
-                        <input type="text" placeholder="Email" id="inputEmail" runat="server" class="form-control"/>
+                    <label class="col-lg-2 control-label" for="Email">Email</label>
+                    <div class="col-lg-10  has-error">
+                         <asp:TextBox ID="Email" ClientIDMode="Static" runat="server" placeholder="Email"  CssClass="form-control"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredEmailValidator" CssClass="control-label" runat="server" ErrorMessage="Email is required." ControlToValidate="Email" Display="Dynamic">
+                        </asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionEmailValidator" runat="server" ErrorMessage="Email is wrong" ControlToValidate="Email" CssClass="control-label" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="BirthDate">Birth Date</label>
                     <div class="col-lg-10">
-                        <input type="text" placeholder="Email" id="BirthDate" runat="server" class="form-control"/>
+                        <asp:TextBox ID="BirthDate" ClientIDMode="Static" runat="server" placeholder="BirthDate"  CssClass="form-control"></asp:TextBox>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="University">University</label>
                     <div class="col-lg-10">
-                        <input type="text" placeholder="Email" id="University" runat="server" class="form-control"/>
+                        <asp:TextBox ID="University" ClientIDMode="Static" runat="server" placeholder="University"  CssClass="form-control"></asp:TextBox>
                     </div>
                   </div>
 

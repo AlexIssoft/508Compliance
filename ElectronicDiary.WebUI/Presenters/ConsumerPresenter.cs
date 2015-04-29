@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Core.Interfaces;
+using Core.Repositories;
 using ElectronicDiary.WebUI.ViewInterfaces;
+using System.Web.Security;
 
 namespace ElectronicDiary.WebUI.Presenters
 {
@@ -20,9 +23,13 @@ namespace ElectronicDiary.WebUI.Presenters
             _view = view;
         }
 
-        public void getConsumer(int Id)
+        public void Init()
         {
-            
+            var repositoryLocator = new RepositoryLocator();
+            var consumerRepository = repositoryLocator.GetRepository<IConsumerRepository>();
+            var currentUser = Membership.GetUser();
+
+            _view.Consumer = consumerRepository.GetConsumer(3);
         }
     }
 }
