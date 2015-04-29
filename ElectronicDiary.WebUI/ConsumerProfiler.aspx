@@ -19,68 +19,38 @@
             <div class="well bs-component">
               <form class="form-horizontal">
                 <fieldset>
-                  <legend>Legend</legend>
+                  <legend>Profile</legend>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label" for="FirstName">First Name</label>
+                    <div class="col-lg-10">
+                      <input type="text" placeholder="First Name" id="FirstName" runat="server" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label" for="LastName">Last Name</label>
+                    <div class="col-lg-10">
+                      <input type="text" placeholder="Last Name" id="LastName" runat="server" class="form-control">
+                    </div>
+                  </div>
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="inputEmail">Email</label>
                     <div class="col-lg-10">
-                      <input type="text" placeholder="Email" id="inputEmail" class="form-control">
+                      <input type="text" placeholder="Email" id="inputEmail" runat="server" class="form-control">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-2 control-label" for="inputPassword">Password</label>
+                    <label class="col-lg-2 control-label" for="BirthDate">Birth Date</label>
                     <div class="col-lg-10">
-                      <input type="password" placeholder="Password" id="inputPassword" class="form-control">
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Checkbox
-                        </label>
-                      </div>
+                      <input type="text" placeholder="Email" id="BirthDate" runat="server" class="form-control">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-lg-2 control-label" for="textArea">Textarea</label>
+                    <label class="col-lg-2 control-label" for="University">University</label>
                     <div class="col-lg-10">
-                      <textarea id="textArea" rows="3" class="form-control"></textarea>
-                      <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                      <input type="text" placeholder="Email" id="University" runat="server" class="form-control">
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label">Radios</label>
-                    <div class="col-lg-10">
-                      <div class="radio">
-                        <label>
-                          <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">
-                          Option one is this
-                        </label>
-                      </div>
-                      <div class="radio">
-                        <label>
-                          <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">
-                          Option two can be something else
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-lg-2 control-label" for="select">Selects</label>
-                    <div class="col-lg-10">
-                      <select id="select" class="form-control">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                      <br>
-                      <select class="form-control" multiple="">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </div>
+
                   <div class="form-group">
                     <div class="col-lg-10 col-lg-offset-2">
                       <button class="btn btn-default" type="reset">Cancel</button>
