@@ -23,31 +23,31 @@
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="FirstName">First Name</label>
                     <div class="col-lg-10">
-                      <input type="text" placeholder="First Name" id="FirstName" runat="server" class="form-control">
+                        <input type="text" placeholder="First Name" id="FirstName" runat="server" class="form-control"/>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="LastName">Last Name</label>
                     <div class="col-lg-10">
-                      <input type="text" placeholder="Last Name" id="LastName" runat="server" class="form-control">
+                        <input type="text" placeholder="Last Name" id="LastName" runat="server" class="form-control"/>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="inputEmail">Email</label>
                     <div class="col-lg-10">
-                      <input type="text" placeholder="Email" id="inputEmail" runat="server" class="form-control">
+                        <input type="text" placeholder="Email" id="inputEmail" runat="server" class="form-control"/>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="BirthDate">Birth Date</label>
                     <div class="col-lg-10">
-                      <input type="text" placeholder="Email" id="BirthDate" runat="server" class="form-control">
+                        <input type="text" placeholder="Email" id="BirthDate" runat="server" class="form-control"/>
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-lg-2 control-label" for="University">University</label>
                     <div class="col-lg-10">
-                      <input type="text" placeholder="Email" id="University" runat="server" class="form-control">
+                        <input type="text" placeholder="Email" id="University" runat="server" class="form-control"/>
                     </div>
                   </div>
 
