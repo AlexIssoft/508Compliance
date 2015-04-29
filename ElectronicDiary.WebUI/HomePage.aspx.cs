@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Web.Security;
 using System.Web.UI;
 using ElectronicDiary.WebUI.Presenters;
 using ElectronicDiary.WebUI.ViewInterfaces;

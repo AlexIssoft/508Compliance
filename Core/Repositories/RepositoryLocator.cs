@@ -16,17 +16,32 @@ namespace Core.Repositories
         static RepositoryLocator()
         {
             DefaultRepositories = new Dictionary<string, string>
-		    {
-		        {
-		            "Core.Interfaces.IConsumerRepository", "Core.Repositories.Fake.FakeConsumerRepository"
-		        },
-		        {
-		            "Core.Interfaces.ILessonRepository", "Core.Repositories.LessonRepository"
-		        },
+            {
                 {
-		            "Core.Interfaces.INoteRepository", "Core.Repositories.NoteRepository"
-		        },
-		    };
+                    "Core.Interfaces.IConsumerRepository", "Core.Repositories.Fake.FakeConsumerRepository"
+                },
+                {
+                    "Core.Interfaces.ILessonRepository", "Core.Repositories.Fake.FakeLessonRepository"
+                },
+                {
+                    "Core.Interfaces.INoteRepository", "Core.Repositories.Fake.FakeNoteRepository"
+                },
+            };
+
+            //initialization for real repositories
+            //DefaultRepositories = new Dictionary<string, string>
+            //{
+            //    {
+            //        "Core.Interfaces.IConsumerRepository", "Core.Repositories.ConsumerRepository"
+            //    },
+            //    {
+            //        "Core.Interfaces.ILessonRepository", "Core.Repositories.LessonRepository"
+            //    },
+            //    {
+            //        "Core.Interfaces.INoteRepository", "Core.Repositories.NoteRepository"
+            //    },
+            //};
+
         }
 
         public RepositoryLocator()
