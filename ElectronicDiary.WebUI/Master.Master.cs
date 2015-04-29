@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.Security;
 using System.Web.UI;
 
 namespace ElectronicDiary.WebUI
@@ -9,5 +10,12 @@ namespace ElectronicDiary.WebUI
         {
             
         }
+
+        protected void btnLogOut_Click(object sender, EventArgs e)
+        {
+            FormsAuthentication.SignOut();
+            Response.Redirect("~/Login.aspx");
+        }
+
     }
 }

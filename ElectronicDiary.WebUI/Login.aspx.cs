@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Web.Security;
-using System.Web.UI;
 
 namespace ElectronicDiary.WebUI
 {
-    public partial class Login : Page
+    public partial class Login : BasePage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -17,7 +16,6 @@ namespace ElectronicDiary.WebUI
                 if (Membership.ValidateUser(UserName.Text, Password.Text))
                 {
                     FormsAuthentication.RedirectFromLoginPage (UserName.Text, SaveMe.Checked);
-
                     Response.Redirect(Request.QueryString["ReturnUrl"] ?? "~/");
                 }
                 else

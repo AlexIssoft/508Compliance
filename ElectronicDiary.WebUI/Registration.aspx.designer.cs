@@ -13,13 +13,13 @@ namespace ElectronicDiary.WebUI {
     public partial class Registration {
         
         /// <summary>
-        /// UserName control.
+        /// UserNameField control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UserName;
+        protected global::System.Web.UI.WebControls.TextBox UserNameField;
         
         /// <summary>
         /// UserNameValidator control.
@@ -31,13 +31,13 @@ namespace ElectronicDiary.WebUI {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator UserNameValidator;
         
         /// <summary>
-        /// Password control.
+        /// PasswordField control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
+        protected global::System.Web.UI.WebControls.TextBox PasswordField;
         
         /// <summary>
         /// RequiredPasswordValidator control.
@@ -49,13 +49,13 @@ namespace ElectronicDiary.WebUI {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredPasswordValidator;
         
         /// <summary>
-        /// EmailAddress control.
+        /// EmailAddressField control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EmailAddress;
+        protected global::System.Web.UI.WebControls.TextBox EmailAddressField;
         
         /// <summary>
         /// EmailAddressValidator control.
@@ -74,6 +74,51 @@ namespace ElectronicDiary.WebUI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CustomValidator EmailAddressHasValidFormat;
+        
+        /// <summary>
+        /// FirstNameField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox FirstNameField;
+        
+        /// <summary>
+        /// FirstNameValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator FirstNameValidator;
+        
+        /// <summary>
+        /// LastNameField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox LastNameField;
+        
+        /// <summary>
+        /// LastNameFiledValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator LastNameFiledValidator;
+        
+        /// <summary>
+        /// UniversityField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox UniversityField;
         
         /// <summary>
         /// Msg control.

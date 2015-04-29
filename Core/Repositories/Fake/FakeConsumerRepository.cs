@@ -76,6 +76,19 @@ namespace Core.Repositories.Fake
             return Get(consumerId);
         }
 
+        public ConsumerModel GetConsumerByUserId(Guid userId)
+        {
+            return new ConsumerModel
+            {
+                BirthDate = DateTime.Now,
+                ConsumerId = 1,
+                Email = "fdsfsdf@tt.by",
+                FirstName = "Name",
+                LastName = "Last",
+                University = "BSUIR"
+            };
+        }
+
         public List<ConsumerModel> GetAllConsumers()
         {
             return GetAll();

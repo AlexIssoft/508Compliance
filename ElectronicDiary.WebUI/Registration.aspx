@@ -13,30 +13,61 @@
                             <div class="form-group">
                                 <label class="col-lg-3 control-label">User Name</label>
                                 <div class="col-lg-9">
-                                    <asp:TextBox ID="UserName" runat="server" placeholder="User Name" class="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="UserNameField" runat="server" placeholder="User Name" class="form-control"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="UserNameValidator" runat="server" ErrorMessage="User Name is required."
-                                        ControlToValidate="UserName" Display="Dynamic">
+                                        ControlToValidate="UserNameField" Display="Dynamic">
                                     </asp:RequiredFieldValidator>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-lg-3 control-label">Password</label>
                                 <div class="col-lg-9">
-                                    <asp:TextBox ID="Password" TextMode="Password" runat="server" placeholder="Password" class="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="PasswordField" TextMode="Password" runat="server" placeholder="Password" class="form-control"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredPasswordValidator" runat="server" ErrorMessage="Password is required."
-                                        ControlToValidate="Password" Display="Dynamic">
+                                        ControlToValidate="PasswordField" Display="Dynamic">
                                     </asp:RequiredFieldValidator>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-lg-3 control-label">Email Address</label>
                                 <div class="col-lg-9">
-                                    <asp:TextBox ID="EmailAddress" runat="server" placeholder="Email Address" class="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="EmailAddressField" runat="server" placeholder="Email Address" class="form-control"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="EmailAddressValidator" runat="server" ErrorMessage="Email Address is required."
-                                        ControlToValidate="EmailAddress" Display="Dynamic">
+                                        ControlToValidate="EmailAddressField" Display="Dynamic">
                                     </asp:RequiredFieldValidator>
-                                    <asp:CustomValidator ID="EmailAddressHasValidFormat" runat="server" Display="Static" ControlToValidate="EmailAddress"
+                                    <asp:CustomValidator ID="EmailAddressHasValidFormat" runat="server" Display="Dynamic" ControlToValidate="EmailAddressField"
                                         ErrorMessage="Please specify a valid email address." OnServerValidate="EmailAddrHasValidFormat_ServerValidate"></asp:CustomValidator>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">First Name</label>
+                                <div class="col-lg-9">
+                                    <asp:TextBox ID="FirstNameField" runat="server" placeholder="First Name" class="form-control"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="FirstNameValidator" runat="server" ErrorMessage="First Name is required."
+                                        ControlToValidate="FirstNameField" Display="Dynamic">
+                                    </asp:RequiredFieldValidator>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Last Name</label>
+                                <div class="col-lg-9">
+                                    <asp:TextBox ID="LastNameField" runat="server" placeholder="Last Name" class="form-control"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="LastNameFiledValidator" runat="server" ErrorMessage="Last Name is required."
+                                        ControlToValidate="LastNameField" Display="Dynamic">
+                                    </asp:RequiredFieldValidator>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">University</label>
+                                <div class="col-lg-9">
+                                    <%--<asp:Calendar ID="BirthdayField" runat="server"  SelectedDate="<%# DateTime.Today %>" />
+                                    <asp:date runat="server" ID="CalendarSample"></asp:date>--%>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">University</label>
+                                <div class="col-lg-9">
+                                    <asp:TextBox ID="UniversityField" runat="server" placeholder="University" class="form-control"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -44,7 +75,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-lg-10 col-lg-offset-2">
-                                    <button class="btn btn-default" type="reset">Cancel</button>
+                                    <button class="btn btn-default" type="reset">Clear</button>
                                     <asp:Button ID="formSubmit" runat="server" Text="Submit" class="btn btn-primary" OnClick="formSubmit_Click"></asp:Button>
                                 </div>
                             </div>

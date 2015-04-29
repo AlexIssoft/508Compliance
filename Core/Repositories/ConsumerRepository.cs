@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Core.Interfaces;
 using Core.Models;
 
@@ -9,6 +10,11 @@ namespace Core.Repositories
         public ConsumerModel GetConsumer(int consumerId)
         {
             return new ConsumerModel();
+        }
+
+        public ConsumerModel GetConsumerByUserId(Guid userId)
+        {
+            throw new NotImplementedException();
         }
 
         public List<ConsumerModel> GetAllConsumers()

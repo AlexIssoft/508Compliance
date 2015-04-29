@@ -42,7 +42,6 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-lg-10 col-lg-offset-2">
-                                    <button class="btn btn-default" type="reset">Cancel</button>
                                     <asp:Button ID="formSubmit" runat="server" Text="Submit" class="btn btn-primary" OnClick="formSubmit_Click"></asp:Button>
                                 </div>
                             </div>

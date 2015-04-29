@@ -87,6 +87,9 @@
     <Compile Include="AddLesson.aspx.designer.cs">
       <DependentUpon>AddLesson.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="ConsumerProfiler.aspx.cs">
       <DependentUpon>ConsumerProfiler.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -126,6 +129,7 @@
       <DependentUpon>Authorization.Master</DependentUpon>
     </Compile>
     <Compile Include="Presenters\HomePresenter.cs" />
+    <Compile Include="Presenters\RegisterPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
@@ -142,6 +146,7 @@
       <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewInterfaces\IHomeView.cs" />
+    <Compile Include="ViewInterfaces\IRegistrationView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
