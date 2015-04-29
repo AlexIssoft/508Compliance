@@ -15,3 +15,4 @@ App_Data/
 !**/packages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
 #!**/packages/repositories.config
+ElectronicDiaryDB/ElectronicDiaryDB/ElectronicDiaryDB.dbmdl
